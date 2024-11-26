@@ -1,0 +1,273 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cinzel", serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Decreased gap between text and image */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Text Content Styling */
+  .text-content {
+    text-align: left;
+    margin-left: 150px;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .text-content h4 {
+    font-size: 18px; /* Increased size */
+    text-transform: uppercase;
+    color: #888;
+    font-family: "Cinzel", serif;
+    margin-bottom: 0px; /* Reduced margin */
+  }
+  
+  .text-content h1 {
+    margin-top: 0;
+    font-size: 35px; /* Increased size */
+    font-family: "Cinzel", serif;
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  .text-content p {
+    color: #666;
+    font-size: 12px; /* Slightly bigger font */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .shop-now {
+    padding: 12px 25px;
+    background-color: #c8a165;
+    color: #fff;
+    border: none;
+    
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .shop-now:hover {
+    background-color: #a07e4d;
+  }
+  
+  /* Image Styling */
+  .image-gallery {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .image img {
+    width: 400px;
+    height: 300px;
+   
+  }
+  
+  /* Slider Section for Small Dots */
+  .slider-container {
+   
+    width: 100%;
+    margin: 30px 0;
+  }
+  
+  .slider {
+    margin-top: 100px;
+    display: none; /* Slides will remain invisible */
+  }
+  
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .slick-dots li {
+    width: 12px; /* Smaller dot size */
+    height: 12px;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: transparent; /* Hide default dot appearance */
+  }
+  
+  .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #888;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #c8a165; /* Highlight active dot */
+    border: 2px solid #c8a165;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image img {
+      max-width: 300px;
+    }
+  
+    .text-content {
+      margin-bottom: 20px;
+    }
+  
+    .text-content h1 {
+      font-size: 30px; /* Slightly smaller for small screens */
+    }
+  
+    .text-content p {
+      font-size: 14px; /* Smaller text for small screens */
+    }
+  }
+  /* For 2nd Page */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Cinzel", serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.timeline-container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.timeline-title {
+  font-family: "Cinzel", serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.timeline-content-wrapper {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 40px;
+}
+
+.timeline-bar::before {
+    content: '';
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.timeline-year {
+    font-family: "Cinzel", serif;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-year.active {
+    border-color: #c4a77d;
+    background: #c4a77d;
+}
+
+.timeline-year-label {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: "Cinzel", serif;
+}
+
+.timeline-nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.timeline-content-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.timeline-image-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.timeline-image-container img {
+  margin-left: 100px;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.timeline-text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.timeline-text-content h2 {
+  font-family: "Cinzel", serif;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.timeline-text-content p {
+  font-family: "Cinzel", serif;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.timeline-read-more {
+  font-family: "Cinzel", serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c4a77d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
